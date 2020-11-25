@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
@@ -9,7 +9,6 @@ metadata:
     run: hello-world-app
   name: hello-world-app
   namespace: 3htp
-  selfLink: /apis/extensions/v1beta1/namespaces/3htp/deployments/hello-world-app
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
